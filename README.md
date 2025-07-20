@@ -3,7 +3,7 @@
 
 > A modular, extensible Retrieval-Augmented Generation (RAG) framework with tool-based automation and workflow orchestration.
 
-![RAG Graph](graph.png)
+![RAG Graph](Graph.png)
 
 ---
 
@@ -143,9 +143,5 @@ Contributions are welcome! Please fork the repository and submit a pull request.
 For any queries or suggestions, reach out to:
 
 **Satyajit Patra**  
-📧 Email: [your-email@example.com]  
-🔗 [LinkedIn](https://www.linkedin.com/in/your-profile) | [Portfolio](https://your-website.com)
-
----
-
-> Made with ❤️ by passionate engineers building next-gen AI tooling
+📧 Email: [satyajitpatra4002@gmail.com]  
+🔗 [LinkedIn](https://www.linkedin.com/in/your-profile)
