@@ -143,5 +143,5 @@ Contributions are welcome! Please fork the repository and submit a pull request.
 For any queries or suggestions, reach out to:
 
 **Satyajit Patra**  
-📧 Email: [satyajitpatra4002@gmail.com]  
+📧 Email: satyajitpatra4002@gmail.com
 🔗 [LinkedIn](https://www.linkedin.com/in/satyajit-patra-b0801a242/)
