@@ -1,7 +1,7 @@
 
 # 🧠 RAG Agent Framework
 
-> A modular, extensible Retrieval-Augmented Generation (RAG) framework with tool-based automation and workflow orchestration.
+A modular, extensible Retrieval-Augmented Generation (RAG) framework with tool-based automation and workflow orchestration.
 
 ![RAG Graph](agent/graph.png)
 
