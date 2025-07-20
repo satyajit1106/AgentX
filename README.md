@@ -144,4 +144,4 @@ For any queries or suggestions, reach out to:
 
 **Satyajit Patra**  
 📧 Email: [satyajitpatra4002@gmail.com]  
-🔗 [LinkedIn](https://www.linkedin.com/in/your-profile)
+🔗 [LinkedIn](https://www.linkedin.com/in/satyajit-patra-b0801a242/)
