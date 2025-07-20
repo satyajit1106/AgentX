@@ -1,0 +1,152 @@
+Image instructions: 
+
+Based on the image provided, consider the following components to extract the design language and other required components, which need development:
+
+*   Extract design language: 
+    *   UI design (User Interface).
+*   Extract Design Components:
+    *   Colors
+    *   Fonts
+    *   Icons
+    *   Typography
+    *   Images.
+*   Other components:
+    *   Header
+    *   Dashboard
+    *   Navigation Bar
+    *   Column Menu
+    *   Sections
+    *   Title
+    *   Body Sections
+Image instructions: 
+
+Based on the image of Shopify provided, the following components and design language are some of the critical components of the application and need to be extracted in this structured format:
+
+**Components to Develop**
+
+*   **Navigation Bar**
+    *   Each icon or button is clickable, providing an interactive UI/UX. 
+    *   Users can view past orders, navigation bar below is the logo, clicking on the social bar icon provides options for how they want to be contacted below the navigation bar and next to the icon is the navigation bar title.
+*   **Products and Listings**
+    *   A product photo (need to develop) in the shopping cart section, this component leads to the product listing page.
+*   **Product Page** 
+    *   Product information section with product name, quantity, price and features; the product information can be manipulated through input box and dropdown
+*   **Search Bar** 
+    *   Simple input box for user to enter in the search term
+*   **User Sidebar**
+    *   The sidebar shows options for products, cart, name, and points earned, which in turn shows customer's order history.
+
+**Design Language**
+
+*   **Flat Design**
+    *   Use simple color schemes with little to no shadow effects.
+    *   The design interface is fairly clean without any bold and flashy buttons.
+*   **Responsive Design**
+    *   Design and content stays the same on all devices, without any adjustment in the website design like layout adjustment
+*   **Typography** 
+    *   The design has both sans-serif and serif in addition, the website also supports both left and center text alignment 
+Software Requirements Document (SRD)
+1. Overview
+This document outlines the requirements for the frontend development of three microservices/applications within the DNA ecosystem: Dashboard, LMS (Leave Management System), and PODs. The focus is on UI/UX design, API contracts for integration, and overall frontend development guidelines.
+
+2. UI/UX Design Guidelines
+2.1 Color Scheme
+•	Primary Color: #007bff (Blue - for primary actions)
+•	Secondary Color: #6c757d (Gray - for secondary actions)
+•	Background Color: #f8f9fa (Light Gray - for application background)
+•	Success Color: #28a745 (Green - for success messages)
+•	Error Color: #dc3545 (Red - for error messages)
+
+2.2 Typography
+•	Font Family: "Inter", sans-serif
+•	Heading Font Size: 24px (Bold)
+•	Subheading Font Size: 18px (Medium)
+•	Body Text Size: 16px (Regular)
+•	Button Text Size: 14px (Bold)
+
+2.3 Components
+•	Buttons: Rounded corners (8px), filled for primary actions, outlined for secondary actions.
+•	Cards: Shadow (box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1)) with padding (16px).
+•	Modals: Centered popups with a semi-transparent background.
+•	Forms: Input fields with a border radius of 5px and padding of 10px.
+
+3. Application Features
+3.1 Dashboard
+•	Displays multiple tiles reflecting highlights from various applications.
+•	Each tile fetches real-time data from APIs.
+•	Users can customize which tiles appear on their dashboard.
+
+API Contract
+Fetch Dashboard Data
+Request:
+GET /api/dashboard
+Headers: {{ 'Authorization': 'Bearer <token>' }}
+Response:
+{
+"tiles": [
+    { "id": "1", "title": "Leave Summary", "content": "10 leaves remaining" },
+    { "id": "2", "title": "Pod Members", "content": "3 active members" }
+]
+}
+
+3.2 LMS (Leave Management System)
+General User Features
+•	Apply for leave.
+•	View granted leaves.
+•	Check available leave balance.
+Manager Features
+•	Approve/reject leave requests.
+•	View team leave history.
+
+API Contract
+Apply for Leave
+Request:
+POST /api/lms/leave/apply
+Headers: {{ 'Authorization': 'Bearer <token>' }}
+Body:
+{
+"startDate": "2025-03-15",
+"endDate": "2025-03-18",
+"reason": "Family event"
+}
+Response:
+{
+"message": "Leave request submitted successfully",
+"status": "pending"
+}
+
+4. Implementation Guidelines
+4.1 Frontend Development
+•	Develop the frontend using a suitable framework (e.g., React, Angular, Vue.js).
+•	Implement the UI/UX design guidelines specified in this document.
+•	Ensure seamless integration with the backend APIs.
+
+4.2 API Integration
+•	Implement API calls to fetch data from the backend.
+•	Handle API errors and exceptions.
+•	Validate user input data.
+
+5. Testing and Deployment
+5.1 Unit Testing
+•	Write unit tests for individual components and functions.
+•	Ensure 100% code coverage.
+
+5.2 Integration Testing
+•	Perform integration testing to ensure seamless interaction between components.
+•	Verify API calls and data fetching.
+
+5.3 Deployment
+•	Deploy the application to a suitable environment (e.g., production, staging).
+•	Ensure scalability and high availability.
+
+6. Documentation
+6.1 Code Documentation
+•	Comment code to ensure readability and maintainability.
+•	Use a suitable documentation tool (e.g., JSDoc, Dox).
+
+6.2 API Documentation
+•	Generate API documentation using a suitable tool (e.g., Swagger, API Blueprint).
+•	Include API endpoints, request and response formats, and error handling.
+
+7. Conclusion
+This document provides frontend implementation guidelines, UI/UX specifications, API contracts, and integration details for Dashboard, LMS, and PODs applications.
