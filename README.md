@@ -3,7 +3,7 @@
 
 > A modular, extensible Retrieval-Augmented Generation (RAG) framework with tool-based automation and workflow orchestration.
 
-![RAG Graph](Graph.png)
+![RAG Graph](agent/graph.png)
 
 ---
 
